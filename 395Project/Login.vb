@@ -25,7 +25,7 @@
         If SQL.HasConnection = True Then
             If EMPLog() = True Then
                 SQL.ExecQuery("SELECT name FROM Employee WHERE EID=" & TextBox1.Text)
-                empname = SQL.DBDS
+                'empname = SQL.DBDS
                 MsgBox("Login as successful!")
                 Action_CTRL.Show()
                 Me.Hide()
