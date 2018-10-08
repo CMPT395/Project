@@ -24,15 +24,19 @@
     Private Sub EMPLOGIN_Click(sender As Object, e As EventArgs) Handles EMPLOGIN.Click
         If SQL.HasConnection = True Then
             If EMPLog() = True Then
-                SQL.ExecQuery("SELECT name FROM Employee WHERE EID=" & TextBox1.Text)
-                'empname = SQL.DBDS
+                SQL.ExecQuery("SELECT * FROM Employee WHERE EID=" & TextBox1.Text)
+                empname = SQL.DBDS.Tables(0).Rows(0)("name").ToString
                 MsgBox("Login as successful!")
                 Action_CTRL.Show()
                 Me.Hide()
                 idshow = TextBox1.Text
-                Action_CTRL.Label2.Text = "Manager:" & TextBox1.Text
+                Action_CTRL.Label2.Text = "Manager:" & empname
             End If
         End If
+    End Sub
+
+    Private Sub login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 
     'USE [CMPT395]
