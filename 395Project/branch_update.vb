@@ -21,7 +21,7 @@ Public Class Branch_update
 
     Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
         Me.Close()
-        EmployeeAction.Show()
+        Action_CTRL.Show()
 
     End Sub
 

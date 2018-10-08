@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Public Class Sqlcon
-    'DESKTOP-U3OR6N1  Leon Desktop
-    Private DBCon As New SqlConnection("Data Source=LEON;Initial Catalog=project;Integrated Security=True")
+    'DESKTOP-1NVLP4D  Leon Desktop
+    Private DBCon As New SqlConnection("Data Source=DESKTOP-1NVLP4D;Initial Catalog=CMPT395;Integrated Security=True")
     Private DBCmd As SqlCommand
     Public DBDA As SqlDataAdapter
     Public DBDT As DataTable

@@ -41,10 +41,6 @@ Public Class customer_history_ratings
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Me.Close()
-        customer_search.Show()
-    End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles userHistoryComboBox.SelectedIndexChanged
 

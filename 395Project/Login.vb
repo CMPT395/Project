@@ -2,16 +2,6 @@
     Public SQL As New Sqlcon
     Public idshow As String
     Public empBID As Integer
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles CUSLLOGIN.Click
-        If SQL.HasConnection = True Then
-            If CUSLog() = True Then
-                MsgBox("Login as Customer successful!")
-                Customer_search.Show()
-                Me.Hide()
-                idshow = TextBox1.Text
-            End If
-        End If
-    End Sub
 
     Private Function CUSLog() As Boolean
         If SQL.DBDS IsNot Nothing Then
@@ -56,20 +46,12 @@
                 SQL.ExecQuery("SELECT BID FROM Employee WHERE EID=" & TextBox1.Text)
                 empBID = SQL.DBDS.Tables(0).Rows(0).Item("BID")
                 MsgBox("Login as Employee successful!")
-                EmployeeAction.Show()
+                Action_CTRL.Show()
                 Me.Hide()
                 idshow = TextBox1.Text
-                EmployeeAction.Label2.Text = "Employee ID:" & TextBox1.Text
+                Action_CTRL.Label2.Text = "Employee ID:" & TextBox1.Text
             End If
         End If
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
-        signup.Show()
-    End Sub
-
-    Private Sub login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
