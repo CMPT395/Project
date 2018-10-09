@@ -1,18 +1,12 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data.Sql
 Public Class Sqlcon
-<<<<<<< HEAD
-	'DESKTOP-1NVLP4D  Leon Desktop
-	'DESKTOP-UUM78C3 Williams Desktop
-	Private DBCon As New SqlConnection("Data Source=DESKTOP-UUM78C3;Initial Catalog=CMPT395;Integrated Security=True")
-	Private DBCmd As SqlCommand
-=======
+    'DESKTOP-UUM78C3 Williams Desktop
     'DESKTOP-1NVLP4D  Leon Desktop
     '0O0              Yuhang Desktop
     'DESKTOP-4M90S2P\LEONXIAO  leon laptop
     Private DBCon As New SqlConnection("Data Source=DESKTOP-1NVLP4D;Initial Catalog=CMPT395;Integrated Security=True")
     Private DBCmd As SqlCommand
->>>>>>> 78450d278871428207cfa6ee74151beda053f61f
     Public DBDA As SqlDataAdapter
     Public DBDT As DataTable
     Public Params As New List(Of SqlParameter)
