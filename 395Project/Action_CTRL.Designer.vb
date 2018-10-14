@@ -22,23 +22,26 @@ Partial Class Action_CTRL
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Employers = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Constructors = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button3
+        'Employers
         '
-        Me.Button3.Location = New System.Drawing.Point(246, 168)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(380, 38)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Report"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Employers.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Employers.Location = New System.Drawing.Point(138, 147)
+        Me.Employers.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
+        Me.Employers.Name = "Employers"
+        Me.Employers.Size = New System.Drawing.Size(196, 38)
+        Me.Employers.TabIndex = 3
+        Me.Employers.Text = "Employers Info"
+        Me.Employers.UseVisualStyleBackColor = True
         '
         'Button4
         '
+        Me.Button4.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(39, 32)
         Me.Button4.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Button4.Name = "Button4"
@@ -57,14 +60,26 @@ Partial Class Action_CTRL
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "manager name"
         '
+        'Constructors
+        '
+        Me.Constructors.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Constructors.Location = New System.Drawing.Point(138, 214)
+        Me.Constructors.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
+        Me.Constructors.Name = "Constructors"
+        Me.Constructors.Size = New System.Drawing.Size(196, 38)
+        Me.Constructors.TabIndex = 8
+        Me.Constructors.Text = "Constructors Info"
+        Me.Constructors.UseVisualStyleBackColor = True
+        '
         'Action_CTRL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(884, 654)
+        Me.ClientSize = New System.Drawing.Size(884, 456)
+        Me.Controls.Add(Me.Constructors)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Employers)
         Me.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Name = "Action_CTRL"
         Me.Text = "EmployeeAction"
@@ -72,7 +87,8 @@ Partial Class Action_CTRL
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Employers As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents Constructors As Button
 End Class
