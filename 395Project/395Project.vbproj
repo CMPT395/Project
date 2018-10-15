@@ -78,6 +78,12 @@
     <Compile Include="Action_CTRL.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Employers.Designer.vb">
+      <DependentUpon>Employers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employers.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Sqlcon.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>

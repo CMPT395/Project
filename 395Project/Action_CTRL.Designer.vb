@@ -34,9 +34,9 @@ Partial Class Action_CTRL
         Me.Employers.Location = New System.Drawing.Point(155, 147)
         Me.Employers.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Employers.Name = "Employers"
-        Me.Employers.Size = New System.Drawing.Size(196, 38)
+        Me.Employers.Size = New System.Drawing.Size(204, 38)
         Me.Employers.TabIndex = 3
-        Me.Employers.Text = "Employers Info"
+        Me.Employers.Text = "Manage Employers"
         Me.Employers.UseVisualStyleBackColor = True
         '
         'Button4
@@ -66,9 +66,9 @@ Partial Class Action_CTRL
         Me.Constructors.Location = New System.Drawing.Point(155, 214)
         Me.Constructors.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Constructors.Name = "Constructors"
-        Me.Constructors.Size = New System.Drawing.Size(196, 38)
+        Me.Constructors.Size = New System.Drawing.Size(204, 38)
         Me.Constructors.TabIndex = 8
-        Me.Constructors.Text = "Constructors Info"
+        Me.Constructors.Text = "Manage Constructors"
         Me.Constructors.UseVisualStyleBackColor = True
         '
         'Action_CTRL

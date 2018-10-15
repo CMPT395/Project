@@ -24,8 +24,8 @@ Partial Class login
     Private Sub InitializeComponent()
         Me.ID = New System.Windows.Forms.Label()
         Me.Password = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.idbox = New System.Windows.Forms.TextBox()
+        Me.passwordbox = New System.Windows.Forms.TextBox()
         Me.EMPLOGIN = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -49,22 +49,22 @@ Partial Class login
         Me.Password.TabIndex = 1
         Me.Password.Text = "Password"
         '
-        'TextBox1
+        'idbox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(215, 86)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(134, 31)
-        Me.TextBox1.TabIndex = 2
+        Me.idbox.Location = New System.Drawing.Point(215, 86)
+        Me.idbox.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.idbox.Name = "idbox"
+        Me.idbox.Size = New System.Drawing.Size(176, 31)
+        Me.idbox.TabIndex = 2
         '
-        'TextBox2
+        'passwordbox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(215, 168)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(134, 31)
-        Me.TextBox2.TabIndex = 3
-        Me.TextBox2.UseSystemPasswordChar = True
+        Me.passwordbox.Location = New System.Drawing.Point(215, 168)
+        Me.passwordbox.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.passwordbox.Name = "passwordbox"
+        Me.passwordbox.Size = New System.Drawing.Size(176, 31)
+        Me.passwordbox.TabIndex = 3
+        Me.passwordbox.UseSystemPasswordChar = True
         '
         'EMPLOGIN
         '
@@ -82,8 +82,8 @@ Partial Class login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(520, 351)
         Me.Controls.Add(Me.EMPLOGIN)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.passwordbox)
+        Me.Controls.Add(Me.idbox)
         Me.Controls.Add(Me.Password)
         Me.Controls.Add(Me.ID)
         Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
@@ -96,7 +96,7 @@ Partial Class login
 
     Friend WithEvents ID As Label
     Friend WithEvents Password As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents idbox As TextBox
+    Friend WithEvents passwordbox As TextBox
     Friend WithEvents EMPLOGIN As Button
 End Class
