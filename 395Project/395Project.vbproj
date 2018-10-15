@@ -78,6 +78,11 @@
     <Compile Include="Action_CTRL.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CMPT395DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CMPT395DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Sqlcon.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
@@ -117,6 +122,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="CMPT395DataSet.xsc">
+      <DependentUpon>CMPT395DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CMPT395DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CMPT395DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CMPT395DataSet.xss">
+      <DependentUpon>CMPT395DataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

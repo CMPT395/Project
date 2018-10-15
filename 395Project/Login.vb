@@ -36,6 +36,8 @@
     End Sub
 
     Private Sub login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'CMPT395DataSet.Login' table. You can move, or remove it, as needed.
+        Me.LoginTableAdapter.Fill(Me.CMPT395DataSet.Login)
 
     End Sub
 
