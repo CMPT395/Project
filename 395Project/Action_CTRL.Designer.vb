@@ -31,7 +31,7 @@ Partial Class Action_CTRL
         'Employers
         '
         Me.Employers.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Employers.Location = New System.Drawing.Point(138, 147)
+        Me.Employers.Location = New System.Drawing.Point(155, 147)
         Me.Employers.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Employers.Name = "Employers"
         Me.Employers.Size = New System.Drawing.Size(196, 38)
@@ -53,7 +53,7 @@ Partial Class Action_CTRL
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(678, 66)
+        Me.Label2.Location = New System.Drawing.Point(346, 40)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(142, 21)
@@ -63,7 +63,7 @@ Partial Class Action_CTRL
         'Constructors
         '
         Me.Constructors.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Constructors.Location = New System.Drawing.Point(138, 214)
+        Me.Constructors.Location = New System.Drawing.Point(155, 214)
         Me.Constructors.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Constructors.Name = "Constructors"
         Me.Constructors.Size = New System.Drawing.Size(196, 38)
@@ -75,7 +75,7 @@ Partial Class Action_CTRL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(884, 456)
+        Me.ClientSize = New System.Drawing.Size(497, 456)
         Me.Controls.Add(Me.Constructors)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button4)
