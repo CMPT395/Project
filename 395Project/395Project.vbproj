@@ -78,10 +78,18 @@
     <Compile Include="Action_CTRL.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="CMPT395DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CMPT395DataSet.xsd</DependentUpon>
+=======
+    <Compile Include="Employers.Designer.vb">
+      <DependentUpon>Employers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employers.vb">
+      <SubType>Form</SubType>
+>>>>>>> 4adcb0bacb34740b4b992088af4c5d0d43705cd3
     </Compile>
     <Compile Include="Sqlcon.vb" />
     <Compile Include="Login.vb">

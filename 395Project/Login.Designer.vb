@@ -25,6 +25,7 @@ Partial Class login
         Me.components = New System.ComponentModel.Container()
         Me.ID = New System.Windows.Forms.Label()
         Me.Password = New System.Windows.Forms.Label()
+<<<<<<< HEAD
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.EMPLOGIN = New System.Windows.Forms.Button()
@@ -33,6 +34,11 @@ Partial Class login
         Me.LoginTableAdapter = New WindowsApp1.CMPT395DataSetTableAdapters.LoginTableAdapter()
         CType(Me.CMPT395DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LoginBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+=======
+        Me.idbox = New System.Windows.Forms.TextBox()
+        Me.passwordbox = New System.Windows.Forms.TextBox()
+        Me.MLOGIN = New System.Windows.Forms.Button()
+>>>>>>> 4adcb0bacb34740b4b992088af4c5d0d43705cd3
         Me.SuspendLayout()
         '
         'ID
@@ -55,17 +61,26 @@ Partial Class login
         Me.Password.TabIndex = 1
         Me.Password.Text = "Password"
         '
-        'TextBox1
+        'idbox
         '
+<<<<<<< HEAD
         Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LoginBindingSource, "user_name", True))
         Me.TextBox1.Location = New System.Drawing.Point(156, 66)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(99, 22)
         Me.TextBox1.TabIndex = 2
+=======
+        Me.idbox.Location = New System.Drawing.Point(215, 86)
+        Me.idbox.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.idbox.Name = "idbox"
+        Me.idbox.Size = New System.Drawing.Size(176, 31)
+        Me.idbox.TabIndex = 2
+>>>>>>> 4adcb0bacb34740b4b992088af4c5d0d43705cd3
         '
-        'TextBox2
+        'passwordbox
         '
+<<<<<<< HEAD
         Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LoginBindingSource, "password", True))
         Me.TextBox2.Location = New System.Drawing.Point(156, 128)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
@@ -73,9 +88,18 @@ Partial Class login
         Me.TextBox2.Size = New System.Drawing.Size(99, 22)
         Me.TextBox2.TabIndex = 3
         Me.TextBox2.UseSystemPasswordChar = True
+=======
+        Me.passwordbox.Location = New System.Drawing.Point(215, 168)
+        Me.passwordbox.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.passwordbox.Name = "passwordbox"
+        Me.passwordbox.Size = New System.Drawing.Size(176, 31)
+        Me.passwordbox.TabIndex = 3
+        Me.passwordbox.UseSystemPasswordChar = True
+>>>>>>> 4adcb0bacb34740b4b992088af4c5d0d43705cd3
         '
-        'EMPLOGIN
+        'MLOGIN
         '
+<<<<<<< HEAD
         Me.EMPLOGIN.Location = New System.Drawing.Point(165, 186)
         Me.EMPLOGIN.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.EMPLOGIN.Name = "EMPLOGIN"
@@ -83,6 +107,15 @@ Partial Class login
         Me.EMPLOGIN.TabIndex = 5
         Me.EMPLOGIN.Text = "Login"
         Me.EMPLOGIN.UseVisualStyleBackColor = True
+=======
+        Me.MLOGIN.Location = New System.Drawing.Point(227, 244)
+        Me.MLOGIN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.MLOGIN.Name = "MLOGIN"
+        Me.MLOGIN.Size = New System.Drawing.Size(108, 38)
+        Me.MLOGIN.TabIndex = 5
+        Me.MLOGIN.Text = "Login"
+        Me.MLOGIN.UseVisualStyleBackColor = True
+>>>>>>> 4adcb0bacb34740b4b992088af4c5d0d43705cd3
         '
         'CMPT395DataSet
         '
@@ -102,10 +135,17 @@ Partial Class login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(582, 335)
         Me.Controls.Add(Me.EMPLOGIN)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
+=======
+        Me.ClientSize = New System.Drawing.Size(520, 351)
+        Me.Controls.Add(Me.MLOGIN)
+        Me.Controls.Add(Me.passwordbox)
+        Me.Controls.Add(Me.idbox)
+>>>>>>> 4adcb0bacb34740b4b992088af4c5d0d43705cd3
         Me.Controls.Add(Me.Password)
         Me.Controls.Add(Me.ID)
         Me.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
@@ -120,10 +160,16 @@ Partial Class login
 
     Friend WithEvents ID As Label
     Friend WithEvents Password As Label
+<<<<<<< HEAD
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents EMPLOGIN As Button
     Friend WithEvents CMPT395DataSet As CMPT395DataSet
     Friend WithEvents LoginBindingSource As BindingSource
     Friend WithEvents LoginTableAdapter As CMPT395DataSetTableAdapters.LoginTableAdapter
+=======
+    Friend WithEvents idbox As TextBox
+    Friend WithEvents passwordbox As TextBox
+    Friend WithEvents MLOGIN As Button
+>>>>>>> 4adcb0bacb34740b4b992088af4c5d0d43705cd3
 End Class

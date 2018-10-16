@@ -23,7 +23,7 @@ Partial Class Action_CTRL
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Employers = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.back = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Constructors = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -31,29 +31,29 @@ Partial Class Action_CTRL
         'Employers
         '
         Me.Employers.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Employers.Location = New System.Drawing.Point(138, 147)
+        Me.Employers.Location = New System.Drawing.Point(186, 142)
         Me.Employers.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Employers.Name = "Employers"
-        Me.Employers.Size = New System.Drawing.Size(196, 38)
+        Me.Employers.Size = New System.Drawing.Size(204, 38)
         Me.Employers.TabIndex = 3
-        Me.Employers.Text = "Employers Info"
+        Me.Employers.Text = "Manage Employers"
         Me.Employers.UseVisualStyleBackColor = True
         '
-        'Button4
+        'back
         '
-        Me.Button4.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(39, 32)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(138, 38)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Sign Out"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.back.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.back.Location = New System.Drawing.Point(39, 32)
+        Me.back.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
+        Me.back.Name = "back"
+        Me.back.Size = New System.Drawing.Size(138, 38)
+        Me.back.TabIndex = 4
+        Me.back.Text = "Sign Out"
+        Me.back.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(678, 66)
+        Me.Label2.Location = New System.Drawing.Point(346, 40)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(142, 21)
@@ -63,22 +63,22 @@ Partial Class Action_CTRL
         'Constructors
         '
         Me.Constructors.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Constructors.Location = New System.Drawing.Point(138, 214)
+        Me.Constructors.Location = New System.Drawing.Point(186, 209)
         Me.Constructors.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Constructors.Name = "Constructors"
-        Me.Constructors.Size = New System.Drawing.Size(196, 38)
+        Me.Constructors.Size = New System.Drawing.Size(204, 38)
         Me.Constructors.TabIndex = 8
-        Me.Constructors.Text = "Constructors Info"
+        Me.Constructors.Text = "Manage Constructors"
         Me.Constructors.UseVisualStyleBackColor = True
         '
         'Action_CTRL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(884, 456)
+        Me.ClientSize = New System.Drawing.Size(621, 456)
         Me.Controls.Add(Me.Constructors)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.back)
         Me.Controls.Add(Me.Employers)
         Me.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Name = "Action_CTRL"
@@ -88,7 +88,7 @@ Partial Class Action_CTRL
 
     End Sub
     Friend WithEvents Employers As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents back As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Constructors As Button
 End Class
