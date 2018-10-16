@@ -3,7 +3,7 @@
     Public idshow As String
     Public empname As String
 
-    Private Function EMPLog() As Boolean
+    Private Function MLog() As Boolean
         If SQL.DBDS IsNot Nothing Then
             SQL.DBDS.Clear()
         End If
@@ -21,9 +21,9 @@
         Return False
     End Function
 
-    Private Sub EMPLOGIN_Click(sender As Object, e As EventArgs) Handles EMPLOGIN.Click
+    Private Sub MLOGIN_Click(sender As Object, e As EventArgs) Handles MLOGIN.Click
         If SQL.HasConnection = True Then
-            If EMPLog() = True Then
+            If MLog() = True Then
                 SQL.ExecQuery("SELECT * FROM Manager WHERE Username='" & idbox.Text & "'")
                 empname = SQL.DBDS.Tables(0).Rows(0)("Lname").ToString
                 MsgBox("Login as successful!")
@@ -39,24 +39,7 @@
 
     End Sub
 
-    'USE [CMPT395]
-    'GO
+    Private Sub idbox_TextChanged(sender As Object, e As EventArgs) Handles idbox.TextChanged
 
-    '/****** Object:  Table [dbo].[Employee]    Script Date: 2018/10/7 22:12:19 ******/
-    'Set ANSI_NULLS On
-    'GO
-
-    'Set QUOTED_IDENTIFIER On
-    'GO
-
-    'CREATE TABLE [dbo].[Employee](
-    '	[EID] [nchar](10) NULL,
-    '	[PASSWORDS] [nchar](10) NULL,
-    '	[NAME] [nchar](10) NULL
-    ') ON [PRIMARY]
-
-    'GO
-
-
-
+    End Sub
 End Class

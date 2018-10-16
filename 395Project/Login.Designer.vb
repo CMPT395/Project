@@ -26,7 +26,7 @@ Partial Class login
         Me.Password = New System.Windows.Forms.Label()
         Me.idbox = New System.Windows.Forms.TextBox()
         Me.passwordbox = New System.Windows.Forms.TextBox()
-        Me.EMPLOGIN = New System.Windows.Forms.Button()
+        Me.MLOGIN = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ID
@@ -66,22 +66,22 @@ Partial Class login
         Me.passwordbox.TabIndex = 3
         Me.passwordbox.UseSystemPasswordChar = True
         '
-        'EMPLOGIN
+        'MLOGIN
         '
-        Me.EMPLOGIN.Location = New System.Drawing.Point(227, 244)
-        Me.EMPLOGIN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.EMPLOGIN.Name = "EMPLOGIN"
-        Me.EMPLOGIN.Size = New System.Drawing.Size(108, 38)
-        Me.EMPLOGIN.TabIndex = 5
-        Me.EMPLOGIN.Text = "Login"
-        Me.EMPLOGIN.UseVisualStyleBackColor = True
+        Me.MLOGIN.Location = New System.Drawing.Point(227, 244)
+        Me.MLOGIN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.MLOGIN.Name = "MLOGIN"
+        Me.MLOGIN.Size = New System.Drawing.Size(108, 38)
+        Me.MLOGIN.TabIndex = 5
+        Me.MLOGIN.Text = "Login"
+        Me.MLOGIN.UseVisualStyleBackColor = True
         '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(520, 351)
-        Me.Controls.Add(Me.EMPLOGIN)
+        Me.Controls.Add(Me.MLOGIN)
         Me.Controls.Add(Me.passwordbox)
         Me.Controls.Add(Me.idbox)
         Me.Controls.Add(Me.Password)
@@ -98,5 +98,5 @@ Partial Class login
     Friend WithEvents Password As Label
     Friend WithEvents idbox As TextBox
     Friend WithEvents passwordbox As TextBox
-    Friend WithEvents EMPLOGIN As Button
+    Friend WithEvents MLOGIN As Button
 End Class
