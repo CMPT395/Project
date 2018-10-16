@@ -5,7 +5,11 @@ Public Class Sqlcon
     'DESKTOP-1NVLP4D  Leon Desktop
     '0O0              Yuhang Desktop
     'DESKTOP-4M90S2P\LEONXIAO  leon laptop
+<<<<<<< HEAD
     Private DBCon As New SqlConnection("Data Source=DESKTOP-4M90S2P\LEONXIAO;Initial Catalog=CMPT395;Integrated Security=True")
+=======
+    Private DBCon As New SqlConnection("Data Source=0O0;Initial Catalog=CMPT395;Integrated Security=True")
+>>>>>>> 532d07df26a4de7d65079ae9be80c2383362431a
     Private DBCmd As SqlCommand
     Public DBDA As SqlDataAdapter
     Public DBDT As DataTable
