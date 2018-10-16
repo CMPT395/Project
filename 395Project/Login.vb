@@ -41,24 +41,5 @@
 
     End Sub
 
-    'USE [CMPT395]
-    'GO
-
-    '/****** Object:  Table [dbo].[Employee]    Script Date: 2018/10/7 22:12:19 ******/
-    'Set ANSI_NULLS On
-    'GO
-
-    'Set QUOTED_IDENTIFIER On
-    'GO
-
-    'CREATE TABLE [dbo].[Employee](
-    '	[EID] [nchar](10) NULL,
-    '	[PASSWORDS] [nchar](10) NULL,
-    '	[NAME] [nchar](10) NULL
-    ') ON [PRIMARY]
-
-    'GO
-
-
 
 End Class
