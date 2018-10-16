@@ -25,6 +25,7 @@ Partial Class login
         Me.components = New System.ComponentModel.Container()
         Me.ID = New System.Windows.Forms.Label()
         Me.Password = New System.Windows.Forms.Label()
+<<<<<<< HEAD
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.EMPLOGIN = New System.Windows.Forms.Button()
@@ -33,6 +34,11 @@ Partial Class login
         Me.LoginTableAdapter = New WindowsApp1.CMPT395DataSetTableAdapters.LoginTableAdapter()
         CType(Me.CMPT395DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LoginBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+=======
+        Me.idbox = New System.Windows.Forms.TextBox()
+        Me.passwordbox = New System.Windows.Forms.TextBox()
+        Me.EMPLOGIN = New System.Windows.Forms.Button()
+>>>>>>> parent of 4adcb0b... update layout and button name
         Me.SuspendLayout()
         '
         'ID
@@ -76,6 +82,7 @@ Partial Class login
         '
         'EMPLOGIN
         '
+<<<<<<< HEAD
         Me.EMPLOGIN.Location = New System.Drawing.Point(165, 186)
         Me.EMPLOGIN.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.EMPLOGIN.Name = "EMPLOGIN"
@@ -97,15 +104,31 @@ Partial Class login
         'LoginTableAdapter
         '
         Me.LoginTableAdapter.ClearBeforeFill = True
+=======
+        Me.EMPLOGIN.Location = New System.Drawing.Point(227, 244)
+        Me.EMPLOGIN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.EMPLOGIN.Name = "EMPLOGIN"
+        Me.EMPLOGIN.Size = New System.Drawing.Size(108, 38)
+        Me.EMPLOGIN.TabIndex = 5
+        Me.EMPLOGIN.Text = "Login"
+        Me.EMPLOGIN.UseVisualStyleBackColor = True
+>>>>>>> parent of 4adcb0b... update layout and button name
         '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(582, 335)
         Me.Controls.Add(Me.EMPLOGIN)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
+=======
+        Me.ClientSize = New System.Drawing.Size(520, 351)
+        Me.Controls.Add(Me.EMPLOGIN)
+        Me.Controls.Add(Me.passwordbox)
+        Me.Controls.Add(Me.idbox)
+>>>>>>> parent of 4adcb0b... update layout and button name
         Me.Controls.Add(Me.Password)
         Me.Controls.Add(Me.ID)
         Me.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
@@ -120,10 +143,16 @@ Partial Class login
 
     Friend WithEvents ID As Label
     Friend WithEvents Password As Label
+<<<<<<< HEAD
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents EMPLOGIN As Button
     Friend WithEvents CMPT395DataSet As CMPT395DataSet
     Friend WithEvents LoginBindingSource As BindingSource
     Friend WithEvents LoginTableAdapter As CMPT395DataSetTableAdapters.LoginTableAdapter
+=======
+    Friend WithEvents idbox As TextBox
+    Friend WithEvents passwordbox As TextBox
+    Friend WithEvents EMPLOGIN As Button
+>>>>>>> parent of 4adcb0b... update layout and button name
 End Class

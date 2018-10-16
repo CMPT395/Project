@@ -24,8 +24,13 @@
     Private Sub EMPLOGIN_Click(sender As Object, e As EventArgs) Handles EMPLOGIN.Click
         If SQL.HasConnection = True Then
             If EMPLog() = True Then
+<<<<<<< HEAD
                 SQL.ExecQuery("SELECT * FROM Employee WHERE EID=" & TextBox1.Text)
                 empname = SQL.DBDS.Tables(0).Rows(0)("name").ToString
+=======
+                SQL.ExecQuery("SELECT * FROM Manager WHERE Username='" & idbox.Text & "'")
+                empname = SQL.DBDS.Tables(0).Rows(0)("Lname").ToString
+>>>>>>> parent of 4adcb0b... update layout and button name
                 MsgBox("Login as successful!")
                 Action_CTRL.Show()
                 Me.Hide()
@@ -41,5 +46,27 @@
 
     End Sub
 
+<<<<<<< HEAD
+=======
+    'USE [CMPT395]
+    'GO
+
+    '/****** Object:  Table [dbo].[Employee]    Script Date: 2018/10/7 22:12:19 ******/
+    'Set ANSI_NULLS On
+    'GO
+
+    'Set QUOTED_IDENTIFIER On
+    'GO
+
+    'CREATE TABLE [dbo].[Employee](
+    '	[EID] [nchar](10) NULL,
+    '	[PASSWORDS] [nchar](10) NULL,
+    '	[NAME] [nchar](10) NULL
+    ') ON [PRIMARY]
+
+    'GO
+
+
+>>>>>>> parent of 4adcb0b... update layout and button name
 
 End Class
